@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" >
+	(function(){
+		var numbers = [1,2,3]
+		var maximo = _.max(numbers)
+		console.log(maximo)
+
+		var personas = [
+			{name: 'han', age : 27},
+			{name: 'ellion', age : 47},
+			{name: 'marcia', age : 21}
+		]
+
+		var max = _.max(personas, function (persona){
+			return persona.age
+		})
+		console.log(max)
+	}())
+
+	</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map Function </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var numbers = [1,2,3]
+			var newNumbers = _.map(numbers, function(value,index,items){
+				items[index] = items[index]*2
+				return value * 3
+
+			})
+			console.log(numbers)
+			console.log(newNumbers)
+		}())
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

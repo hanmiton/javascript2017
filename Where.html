@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" >
+	(function(){
+		var personas = [
+		{
+			name : "tom",
+			age : 22
+		},
+		{
+			name: "emi",
+			age: 33
+		},
+		{
+			name: "ted",
+			age : 22
+		}
+		]
+
+		var per22 = _.where(personas, {age:22})
+		console.log(per22)
+
+		var per = _.findWhere(personas, {age:22})
+		console.log(per)
+	}())
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

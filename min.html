@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" >
+	(function(){
+		var numbers = [1,2,3,4]
+		var minimo = _.min(numbers)
+		console.log(minimo)
+
+		var cars = [
+			{mark: 'hoda', vel: 100},
+			{mark: 'mazda', vel : 200},
+			{mark: 'tesla', vel : 200}
+		]
+
+		var mins = _.min(cars, function(car){
+			return car.vel
+		})
+
+		console.log(mins)
+	}())
+	</script>
+</head>
+<body>
+
+</body>
+</html>

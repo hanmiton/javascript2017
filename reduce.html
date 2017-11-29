@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reduce underscore</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var numeros = [1,2,3]
+			var sum = _.reduce(numeros, function (sum, value,index,items){
+				return sum + value
+			})
+			console.log(sum)
+		}())
+
+	</script>
+<body>
+
+</body>
+</html>

@@ -8,6 +8,7 @@
 		(function(){
 			var numeros = [1,2,3]
 			var sum = _.reduce(numeros, function (sum, value,index,items){
+				console.log(index)
 				return sum + value
 			})
 			console.log(sum)

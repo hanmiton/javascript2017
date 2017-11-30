@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" >
+	(function(){
+		var cars = ['toyota','kia','nia']
+
+		var grouped = _.groupBy(cars, 'length')
+
+		console.log (grouped)
+
+		var cars2 = [
+			{name : 'toryota', vel : 70},
+			{name: 'kia',  vel : 70},
+			{name: 'hol', vel : 40}
+
+		]
+
+		var grouped2 = _.groupBy(cars2, function(car){
+			return car.vel
+		})
+
+		console.log(grouped2)
+
+	}())
+	</script>
+</head>
+<body>
+
+</body>
+</html>

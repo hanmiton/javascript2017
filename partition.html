@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script type="text/javascript" >
+	var names = ['tom', 'niki', 'hanmilton']
+	var grouped = _.partition(names, function(name){
+		return name.length > 3 
+	}())
+	console.log(grouped)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
